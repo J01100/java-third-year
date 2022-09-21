@@ -1,17 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="25fff551-4c3b-4dd1-8be8-0ab0f40fb783" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/com/mabuti/hope/domain/Department.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/mabuti/hope/domain/Employee.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/mabuti/hope/domain/Job.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/mabuti/hope/domain/JobHistory.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/mabuti/hope/main/HopeMain.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/mabuti/hope/techServ/DepartmentDA.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/mabuti/hope/techServ/EmployeeDA.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/mabuti/hope/techServ/JobDA.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/mabuti/hope/techServ/JobHistDA.java" afterDir="false" />
-    </list>
+    <list default="true" id="25fff551-4c3b-4dd1-8be8-0ab0f40fb783" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
