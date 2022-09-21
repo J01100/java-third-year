@@ -25,7 +25,9 @@ public class JobHistoryDA {
 
                 JobDA jobDA = new JobDA(jobHistoryRowSpecific[1]);
                 jobHistory.setJob(jobDA.getJob());
-                DepartmentDA departmentDA = new DepartmentDA();
+
+                DepartmentDA departmentDA = new DepartmentDA(jobHistoryRowSpecific[4]);
+                jobHistory.setDepartment(departmentDA.getDepartment());
 
                 jobHistoryList.add(jobHistory);
             }

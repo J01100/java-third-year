@@ -18,7 +18,6 @@ public class JobDA {
             if (jobCode.contentEquals(jobRowSpecific[0])){
                 this.job.setJobCode(jobRowSpecific[0]);
                 this.job.setDescription(jobRowSpecific[1]);
-
             }
         }
     }
