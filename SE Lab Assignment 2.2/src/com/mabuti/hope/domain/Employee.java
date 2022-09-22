@@ -43,7 +43,7 @@ public class Employee {
         return jobHistory;
     }
 
-    public void setJobHist(List<JobHistory> jobHistory) {
+    public void setJobHistory(List<JobHistory> jobHistory) {
         this.jobHistory = jobHistory;
     }
 }

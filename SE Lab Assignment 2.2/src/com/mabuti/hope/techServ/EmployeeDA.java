@@ -26,7 +26,7 @@ public class EmployeeDA {
             employee.setGender(empRowSpecific[3]);
 
             JobHistoryDA jobHistoryDA = new JobHistoryDA(employee.getEmpNo());
-            employee.setJobHist(jobHistoryDA.getJobHistoryList());
+            employee.setJobHistory(jobHistoryDA.getJobHistoryList());
 
             employeeList.add(employee);
         }
