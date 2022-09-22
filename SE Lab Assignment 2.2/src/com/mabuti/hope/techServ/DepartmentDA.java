@@ -7,7 +7,7 @@ import java.io.FileReader;
 import java.io.IOException;
 
 public class DepartmentDA {
-    Department department = new Department();
+    private Department department = new Department();
 
     public DepartmentDA(String deptCode) throws IOException {
         BufferedReader departmentFile = new BufferedReader(new FileReader("src/csv/DEPFILE.csv"));
