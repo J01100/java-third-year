@@ -1,6 +1,6 @@
-package hope.com.techServ;
+package com.mabuti.hope.techServ;
 
-import hope.com.domain.Job;
+import com.mabuti.hope.domain.Job;
 
 import java.io.BufferedReader;
 import java.io.FileReader;

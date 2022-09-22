@@ -1,8 +1,8 @@
-package hope.com.main;
+package com.mabuti.hope.main;
 
-import hope.com.domain.Employee;
-import hope.com.domain.JobHistory;
-import hope.com.techServ.EmployeeDA;
+import com.mabuti.hope.domain.Employee;
+import com.mabuti.hope.domain.JobHistory;
+import com.mabuti.hope.techServ.EmployeeDA;
 
 import java.io.IOException;
 
@@ -19,7 +19,7 @@ public class HopeMain {
                                 employee.getGender());
 
             System.out.println("Job History of Employee:");
-            for (JobHistory jobHistory : employee.getJobHist()){
+            for (JobHistory jobHistory : employee.getJobHistory()){
                 System.out.println( jobHistory.getEffectiveDate() + " " +
                                     jobHistory.getSalary() + " " +
                                     jobHistory.getJob().getJobCode() + " " +

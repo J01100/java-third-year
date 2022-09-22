@@ -1,6 +1,6 @@
-package hope.com.techServ;
+package com.mabuti.hope.techServ;
 
-import hope.com.domain.Department;
+import com.mabuti.hope.domain.Department;
 
 import java.io.BufferedReader;
 import java.io.FileReader;
@@ -17,8 +17,8 @@ public class DepartmentDA {
             String[] departmentRowSpecific = departmentRow.split(",");
 
             if (deptCode.contentEquals(departmentRowSpecific[0])){
-                department.setDeptCode(departmentRowSpecific[0]);
-                department.setDepartmentName(departmentRowSpecific[1]);
+                this.department.setDeptCode(departmentRowSpecific[0]);
+                this.department.setDepartmentName(departmentRowSpecific[1]);
             }
         }
     }

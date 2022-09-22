@@ -1,10 +1,11 @@
-package hope.com.domain;
+package com.mabuti.hope.domain;
 
 import java.util.List;
 
 public class Employee {
     private String empNo, lastName, firstName, gender;
-    private List<JobHistory> jobHist;
+
+    private List<JobHistory> jobHistory;
 
     public String getEmpNo() {
         return empNo;
@@ -38,11 +39,11 @@ public class Employee {
         this.gender = gender;
     }
 
-    public List<JobHistory> getJobHist() {
-        return jobHist;
+    public List<JobHistory> getJobHistory() {
+        return jobHistory;
     }
 
-    public void setJobHist(List<JobHistory> jobHist) {
-        this.jobHist = jobHist;
+    public void setJobHist(List<JobHistory> jobHistory) {
+        this.jobHistory = jobHistory;
     }
 }

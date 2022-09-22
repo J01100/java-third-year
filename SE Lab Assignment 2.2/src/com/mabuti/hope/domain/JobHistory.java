@@ -1,5 +1,4 @@
-package hope.com.domain;
-
+package com.mabuti.hope.domain;
 
 public class JobHistory {
     private Job job;
