@@ -32,6 +32,7 @@ public class CourseDA {
 
                 courseList.add(course);
             }
+
         }
     }
 }

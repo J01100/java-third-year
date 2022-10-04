@@ -23,6 +23,10 @@ public class Student {
         this.name = name;
     }
 
+    public String getProgram() {
+        return program;
+    }
+
     public void setProgram(String program) {
         this.program = program;
     }
