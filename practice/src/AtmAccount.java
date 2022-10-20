@@ -1,5 +1,4 @@
 import java.io.FileWriter;
-import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -55,6 +54,8 @@ public class AtmAccount {
             for (AtmAccount atmAccount : AtmAccount.listAccounts){
                 if (actNumber.equals(atmAccount.actNumber)){
                     atmAccount.bal += amount;
+                    System.out.println("Fund transfer successful. Amount: " + amount);
+                    return;
                 } else {
                     System.out.println("Account number does not exist.");
                 }
@@ -69,7 +70,4 @@ public class AtmAccount {
         this.pinHash = newPin.hashCode();
     }
 
-    public String getActNumber() {
-        return actNumber;
-    }
 }

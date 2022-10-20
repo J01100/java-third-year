@@ -5,8 +5,6 @@ public class Register {
     public static void register() throws IOException {
         Scanner sc = new Scanner(System.in);
 
-        System.out.print("Enter pin: ");
-        String pin = sc.nextLine();
 
         System.out.print("Enter account number: ");
         String actNo = sc.nextLine();
@@ -17,6 +15,9 @@ public class Register {
             System.out.print("Enter account number: ");
             actNo = sc.nextLine();
         }
+
+        System.out.print("Enter pin code: ");
+        String pin = sc.nextLine();
 
         System.out.print("Enter account name: ");
         String actName = sc.nextLine();

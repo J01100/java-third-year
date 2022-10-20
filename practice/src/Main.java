@@ -5,6 +5,8 @@ import java.util.Scanner;
 
 
 public class Main {
+    // 1450575459 = 123456
+    // 45806642 = 00002
     public static void main(String[] args) {
         boolean running = true;
 
