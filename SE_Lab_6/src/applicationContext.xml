@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+       http://www.springframework.org/schema/beans/spring-beans.xsd
+       http://www.springframework.org/schema/context
+       http://www.springframework.org/schema/context/spring-context.xsd">
+
+
+    <context:component-scan base-package="com.annotations.domain"> </context:component-scan>
+
+    <!--
+    <bean id="flavoredMilkTea" class="com.annotations.domain.FlavoredMilkTea">
+        <constructor-arg index="0" value="25% sugar"> </constructor-arg>
+        <constructor-arg index="1" value="Large"> </constructor-arg>
+        <constructor-arg index="2" ref="taro"> </constructor-arg>
+    </bean>
+    -->
+
+    <bean id="flavoredMilkTea" class="com.annotations.domain.FlavoredMilkTea">
+        <property name="sugarLevel" value="0%"> </property>
+        <property name="size" value="Small"> </property>
+        <property name="milkTea" ref="taro"> </property>
+    </bean>
+
+</beans>
