@@ -1,4 +1,3 @@
-
 public class Cat implements Pet{
     public Cat(){}
     private String petName;
