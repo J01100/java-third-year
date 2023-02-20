@@ -1,12 +1,15 @@
 public class Dog implements Pet {
-    public Dog(){}
+    public Dog(){ }
+    private String petName;
+    private String breed;
 
-    @Override
-    public String showLove() {
-        return "Flash puppy eyes!";
+    public String getPetName() {
+        return petName;
     }
 
-    private String breed;
+    public void setPetName(String petName) {
+        this.petName = petName;
+    }
 
     public String getBreed() {
         return breed;
@@ -14,5 +17,10 @@ public class Dog implements Pet {
 
     public void setBreed(String breed) {
         this.breed = breed;
+    }
+
+    @Override
+    public String showLove() {
+        return "Flash puppy eyes!";
     }
 }

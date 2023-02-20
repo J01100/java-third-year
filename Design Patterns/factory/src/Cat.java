@@ -1,12 +1,18 @@
-public class Cat implements Pet {
+
+public class Cat implements Pet{
     public Cat(){}
+    private String petName;
     private Double runSpeed;
     private Integer lifeCounter;
 
-    @Override
-    public String showLove() {
-        return "Keeps purring!";
+    public String getPetName() {
+        return petName;
     }
+
+    public void setPetName(String petName) {
+        this.petName = petName;
+    }
+
     public Double getRunSpeed() {
         return runSpeed;
     }
@@ -21,5 +27,10 @@ public class Cat implements Pet {
 
     public void setLifeCounter(Integer lifeCounter) {
         this.lifeCounter = lifeCounter;
+    }
+
+    @Override
+    public String showLove() {
+        return "Keeps purring!";
     }
 }
