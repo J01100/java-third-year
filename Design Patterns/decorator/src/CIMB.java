@@ -3,7 +3,7 @@ public class CIMB {
 
         SavingsAccount account = new SavingsAccount();
 
-        account.setAccountNumber(String.valueOf(1234));
+        account.setAccountNumber(1234);
         account.setAccountName("Juan Dela Cruz");
         account.setBalance(10000.0);
 

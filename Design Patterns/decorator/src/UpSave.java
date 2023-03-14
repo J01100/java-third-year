@@ -7,7 +7,7 @@ public class UpSave implements BankAccountDecorator {
     }
 
     @Override
-    public void setBankAccount(){
+    public void setBankAccount() {
         System.out.println("set upsave acc");
     }
 

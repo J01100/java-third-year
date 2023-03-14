@@ -1,5 +1,5 @@
-public class GSave implements BankAccountDecorator{
-    private SavingsAccount account;
+public class GSave implements BankAccountDecorator {
+    private final SavingsAccount account;
     private BankAccount bankAccount;
 
     public GSave(SavingsAccount account) {
