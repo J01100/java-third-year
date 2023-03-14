@@ -1,15 +1,14 @@
 public class UpSave implements BankAccountDecorator {
-    private BankAccount bankAccount;
-    private SavingsAccount account;
+    private final BankAccount bankAccount;
+    private final SavingsAccount account;
 
     public UpSave(SavingsAccount account) {
         this.account = account;
+        this.bankAccount = account;
     }
 
     @Override
-    public void setBankAccount() {
-        System.out.println("set upsave acc");
-    }
+    public void setBankAccount() { }
 
     @Override
     public String showAccountType() {
@@ -23,17 +22,17 @@ public class UpSave implements BankAccountDecorator {
 
     @Override
     public Double getBalance() {
-        return this.account.getBalance();
+        return this.bankAccount.getBalance();
     }
 
     @Override
     public String showBenefits() {
-        return this.account.showBenefits() + ", With Insurance";
+        return this.bankAccount.showBenefits() + ", With Insurance";
     }
 
     @Override
     public Double computeBalanceWithInterest() {
-        return this.account.getBalance() + this.account.getBalance() * getInterestRate();
+        return this.bankAccount.getBalance() + this.bankAccount.getBalance() * getInterestRate();
     }
 
     @Override
