@@ -1,4 +1,5 @@
-public class CIMB {
+public class Cimb {
+
     public static void main(String[] args) {
 
         SavingsAccount account = new SavingsAccount();
@@ -7,7 +8,7 @@ public class CIMB {
         account.setAccountName("Juan Dela Cruz");
         account.setBalance(10000.0);
 
-        System.out.println(account.showInfo());
+        System.out.print(account.showInfo());
         System.out.println("Account type: " + account.showAccountType());
         System.out.println("Interest rate: " + account.getInterestRate());
         System.out.println("New balance: " + account.computeBalanceWithInterest());
@@ -16,7 +17,7 @@ public class CIMB {
         System.out.println("----------------------");
 
         GSave gSave = new GSave(account);
-        System.out.println(gSave.showInfo());
+        System.out.print(gSave.showInfo());
         System.out.println("Account type: " + gSave.showAccountType());
         System.out.println("Interest rate: " + gSave.getInterestRate());
         System.out.println("New balance: " + gSave.computeBalanceWithInterest());
@@ -25,10 +26,11 @@ public class CIMB {
         System.out.println("----------------------");
 
         UpSave upSave = new UpSave(account);
-        System.out.println(gSave.showInfo());
+        System.out.print(gSave.showInfo());
         System.out.println("Account type: " + upSave.showAccountType());
         System.out.println("Interest rate: " + upSave.getInterestRate());
         System.out.println("New balance: " + upSave.computeBalanceWithInterest());
         System.out.println("Benefits: " + upSave.showBenefits());
     }
 }
+

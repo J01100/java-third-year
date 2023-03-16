@@ -1,39 +1,8 @@
-public class SavingsAccount implements BankAccount {
-    String accountName;
+// Concrete Component
+public class SavingsAccount implements BankAccount{
     int accountNumber;
-    Double balance;
-
-    @Override
-    public String showAccountType() {
-        return "Savings Account";
-    }
-
-    @Override
-    public Double getInterestRate() {
-        return .01;
-    }
-
-    @Override
-    public Double getBalance() {
-        return this.balance;
-    }
-
-    @Override
-    public String showBenefits() {
-        return "Standard Savings Account";
-    }
-
-    @Override
-    public Double computeBalanceWithInterest() {
-        return this.balance + this.balance * getInterestRate();
-    }
-
-    @Override
-    public String showInfo() {
-        return "Account Number: " + this.accountNumber + "\n" +
-                "Account Name: " + this.accountName + "\n" +
-                "Balance: " + this.balance;
-    }
+    double balance;
+    String accountName;
 
     public int getAccountNumber() {
         return accountNumber;
@@ -51,7 +20,41 @@ public class SavingsAccount implements BankAccount {
         this.accountName = accountName;
     }
 
-    public void setBalance(Double balance) {
+    public void setBalance(double balance) {
         this.balance = balance;
+    }
+
+    @Override
+    public String showAccountType() {
+       return "Savings Account";
+    }
+
+    @Override
+    public Double getInterestRate() {
+        return 0.01;
+    }
+
+    @Override
+    public Double getBalance() {
+        return this.balance;
+    }
+
+    @Override
+    public String showBenefits() {
+        return "Standard Savings Account";
+    }
+
+    @Override
+    public Double computeBalanceWithInterest() {
+        return this.getBalance()+this.getBalance()*this.getInterestRate();
+    }
+
+    @Override
+    public String showInfo() {
+        return String.format("""
+                Account Number: %s 
+                Account Name: %s 
+                Account Balance: %s 
+                """, this.getAccountNumber(), this.getAccountName(), this.getBalance());
     }
 }

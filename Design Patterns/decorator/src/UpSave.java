@@ -1,14 +1,12 @@
-public class UpSave implements BankAccountDecorator {
-    private final BankAccount bankAccount;
-    private final SavingsAccount account;
+// Concrete Decorator
+public class UpSave implements BankAccountDecorator{
+     BankAccount bankAccount;
+    SavingsAccount savingsAccount;
 
     public UpSave(SavingsAccount account) {
-        this.account = account;
         this.bankAccount = account;
+        this.savingsAccount = account;
     }
-
-    @Override
-    public void setBankAccount() { }
 
     @Override
     public String showAccountType() {
@@ -17,7 +15,7 @@ public class UpSave implements BankAccountDecorator {
 
     @Override
     public Double getInterestRate() {
-        return .04;
+        return 0.04;
     }
 
     @Override
@@ -32,13 +30,20 @@ public class UpSave implements BankAccountDecorator {
 
     @Override
     public Double computeBalanceWithInterest() {
-        return this.bankAccount.getBalance() + this.bankAccount.getBalance() * getInterestRate();
+        return this.getBalance()+this.getBalance()*this.getInterestRate();
     }
 
     @Override
     public String showInfo() {
-        return "Account Number: " + this.account.getAccountNumber() + "\n" +
-                "Account Name: " + this.account.getAccountName() + "\n" +
-                "Balance: " + this.account.getBalance();
+        return String.format("""
+            Account Number: %s 
+            Account Name: %s 
+            Account Balance: %s 
+            """, this.savingsAccount.getAccountNumber(), this.savingsAccount.getAccountName(), this.getBalance());
+    }
+
+    @Override
+    public void setBankAccount(BankAccount bankAccount) {
+        this.bankAccount = bankAccount;
     }
 }
